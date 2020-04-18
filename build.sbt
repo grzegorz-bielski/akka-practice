@@ -20,7 +20,8 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   "com.typesafe.akka" %% "akka-testkit" % akkaVersion,
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
-  "org.scalatest" %% "scalatest" % "3.0.5"
+  "org.scalatest" %% "scalatest" % "3.0.5",
+  "ch.qos.logback" % "logback-classic" % "1.1.3" % Runtime
   // // local levelDB stores
   // "org.iq80.leveldb" % "leveldb" % leveldbVersion,
   // "org.fusesource.leveldbjni" % "leveldbjni-all" % leveldbjniVersion,
