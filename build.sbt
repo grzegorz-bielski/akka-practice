@@ -13,6 +13,8 @@ val akkaHttpVersion = "10.1.11"
 
 resolvers += Resolver.jcenterRepo
 
+scalacOptions += "-Ypartial-unification"
+
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttpVersion,
   "com.typesafe.akka" %% "akka-http-spray-json" % akkaHttpVersion,
@@ -22,6 +24,7 @@ libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
   "com.typesafe.play" %% "play-json" % "2.8.1",
   "org.scalatest" %% "scalatest" % "3.0.5",
+  "org.typelevel" %% "cats-core" % "2.0.0",
   "ch.qos.logback" % "logback-classic" % "1.1.3" % Runtime
   // // local levelDB stores
   // "org.iq80.leveldb" % "leveldb" % leveldbVersion,
